@@ -15,7 +15,7 @@ const anotherId = Symbol('123')
 
 // console.log(id);
 // console.log(anotherId);
-console.log(id === anotherId);
+//console.log(id === anotherId);
 
 const bigNumber = 343545456456566n 
 
@@ -35,8 +35,29 @@ const myFunction = function(){
     
 }
 
-console.log(typeof outsideTemp); // object
+// console.log(typeof outsideTemp); // object
 
-console.log(typeof isLoggedIn);  // boolean
+// console.log(typeof isLoggedIn);  // boolean
 
-console.log(typeof myobj); // object
+// console.log(typeof myobj); // object
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack (Primitive), Heap (Non-Primitive)
+let myGamename = "Ludo"
+let anothername= myGamename;
+
+anothername = "chaiorcode"
+console.log(anothername);
+console.log(myGamename);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email="user@yahoo.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
